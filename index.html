@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>LED Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="amarelo" class="led" aria-label="LED amarelo" role="img"></div>
+
+  <div class="actions">
+    <button id="btnLigar" type="button" onclick="ligarAmarelo()">Ligar</button>
+    <button id="btnDesligar" type="button" onclick="desligar()">Desligar</button>
+  </div>
+  
+</body>
+<!-- Paho MQTT (WebSockets) link da web-->
+<!-- <script src="https://unpkg.com/paho-mqtt/mqttws31.min.js"></script>-->
+  <script src="mqttws31.js"></script>  
+  <script src="script.js"></script>
+</html>
